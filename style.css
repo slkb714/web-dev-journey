@@ -1,0 +1,39 @@
+/* Basic reset / body styles (keep whatever you already have) */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 40px;
+  background: #f5f5f5;
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  justify-content: space-between;   /* spreads the three links across the row */
+  background: #222;
+  padding: 16px 24px;
+  margin-bottom: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== CARD ROW ===== */
+.card-row {
+  display: flex;
+  gap: 20px;                        /* clean spacing between cards */
+  /* align-items: flex-start; */    /* try these one by one */
+  /* align-items: center; */
+  /* align-items: stretch; */       /* this is the default */
+  /* flex-direction: column; */     /* temporary test – remember to remove */
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex: 1;                          /* each card grows equally */
+}
