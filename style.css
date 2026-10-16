@@ -28,8 +28,9 @@ nav a {
 
 /* ===== CARD ROW ===== */
 .card-row {
-  display: flex;
-  gap: 20px;                        /* clean spacing between cards */
+  /*display: flex;*/
+  gap: 20px; 
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;                       /* clean spacing between cards */
   /* align-items: flex-start; */    /* try these one by one */
   /* align-items: center; */
   /* align-items: stretch; */       /* this is the default */
@@ -43,3 +44,18 @@ nav a {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   flex: 1;                          /* each card grows equally */
 }
+   .dashboard {
+     display: grid;
+     grid-template-columns: 200px 1fr;
+     grid-template-rows: 60px 1fr 50px;
+     grid-template-areas:
+       "header header"
+       "sidebar main"
+       "footer footer";
+     gap: 10px;
+     min-height: 400px;
+   }
+   .db-header  { grid-area: header; background: #333; color: white; }
+   .db-sidebar { grid-area: sidebar; background: #ddd; }
+   .db-main    { grid-area: main; background: #f5f5f5; }
+   .db-footer  { grid-area: footer; background: #333; color: white; }
