@@ -7,11 +7,17 @@ body {
 
 /* ===== NAV ===== */
 nav {
-  display: flex;
-  justify-content: space-between;   /* spreads the three links across the row */
   background: #222;
   padding: 16px 24px;
   margin-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
